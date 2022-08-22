@@ -1,0 +1,17 @@
+BASE:
+ #log等级
+ log_level: "debug"
+ #扩展名
+ log_extension: ".log"
+ test:
+  sso_url: "http://sso.xdyj.com"
+  erp_url: "http://erp.xdyj.com"
+  case_file: "testdata.xls"
+  case_sheet: "login_data"
+
+
+email:
+ smtpserver: "smtp.vampeen.com"
+ username: "huangrong@vampeen.com"
+ password: "Huang001129"
+ receiver: "huangrong@vampeen.com"

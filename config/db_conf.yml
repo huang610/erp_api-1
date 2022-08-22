@@ -1,0 +1,25 @@
+
+#编写相关基本信息
+db_cnk_db:
+  db_host: "42.62.87.3"
+  db_user: "ceshi"
+  db_password: "ZWou0CznYjGR2V"
+  db_name: "cnk_db"
+  db_charset: "utf8"
+  db_port: "13304"
+
+db_cnk_wechat:
+  db_host: "42.62.87.3"
+  db_user: "ceshi"
+  db_password: "ZWou0CznYjGR2V"
+  db_name: "cnk_wechat"
+  db_charset: "utf8"
+  db_port: "13304"
+
+db_3:
+  db_host: "192.168.1.140"
+  db_user: "cnkang"
+  db_password: "CnKangData"
+  db_name: "cnk_db"
+  db_charset: "utf8"
+  db_port: "13304"

@@ -1,0 +1,61 @@
+2022-08-22 15:09:49,358 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py INFO 报告地址:/Users/huangrong/Documents/work/erp_api/report/html 
+2022-08-22 15:10:16,764 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py INFO 报告地址:/Users/huangrong/Documents/work/erp_api/report/html 
+2022-08-22 15:11:51,970 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py INFO 报告地址:/Users/huangrong/Documents/work/erp_api/report/html 
+2022-08-22 15:12:06,673 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py INFO 报告地址:/Users/huangrong/Documents/work/erp_api/report/html 
+2022-08-22 15:13:25,555 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG ------------开始执行用例------------ 
+2022-08-22 15:13:25,555 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 执行用例为：{'用例ID': 'login_1', '模块': '登录', '接口名称': '用户名正确，密码正确', '请求URL': '/v1/auth/login', '前置条件': '', '请求类型': 'POST', '请求参数类型': 'json', '请求参数': '{"account_name":"ak","passwd":"111111"}', '预期结果': "{ 'errmsg': '成功'}", '实际结果': '', '备注': '', '是否运行': 'y', 'headers': '', 'cookies': '', 'status_code': 200.0, '数据库验证': ''} 
+2022-08-22 15:13:25,560 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：{"account_name":"ak","passwd":"111111"} 
+2022-08-22 15:13:25,560 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 期望结果为：<class 'str'>{ 'errmsg': '成功'} 
+2022-08-22 15:13:25,560 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG header类型为：<class 'str'> 
+2022-08-22 15:13:25,561 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 发送post请求，请求url：http://sso.xdyj.com/v1/auth/login 
+2022-08-22 15:13:25,561 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：<class 'dict'>{'account_name': 'ak', 'passwd': '111111'} 
+2022-08-22 15:13:25,581 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 用例执行返回结果的body为：{'errno': 50004, 'errmsg': '账号不存在'} 
+2022-08-22 15:13:25,581 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is "errmsg": "成功" 
+2022-08-22 15:13:25,582 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is not in body;e_body="errmsg": "成功",body={"errno": 50004, "errmsg": "账号不存在"} 
+2022-08-22 15:13:25,669 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG ------------开始执行用例------------ 
+2022-08-22 15:13:25,669 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 执行用例为：{'用例ID': 'login_2', '模块': '登录', '接口名称': '正确的用户名，密码为空', '请求URL': '/v1/auth/login', '前置条件': '', '请求类型': 'POST', '请求参数类型': 'json', '请求参数': '{"account_name":"gaojianbo","passwd":""}', '预期结果': '{"errmsg": "参数错误"}', '实际结果': '', '备注': '', '是否运行': 'y', 'headers': '', 'cookies': '', 'status_code': '', '数据库验证': ''} 
+2022-08-22 15:13:25,674 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：{"account_name":"gaojianbo","passwd":""} 
+2022-08-22 15:13:25,674 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 期望结果为：<class 'str'>{"errmsg": "参数错误"} 
+2022-08-22 15:13:25,674 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG header类型为：<class 'str'> 
+2022-08-22 15:13:25,675 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 发送post请求，请求url：http://sso.xdyj.com/v1/auth/login 
+2022-08-22 15:13:25,675 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：<class 'dict'>{'account_name': 'gaojianbo', 'passwd': ''} 
+2022-08-22 15:13:25,683 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 用例执行返回结果的body为：{'errno': 50008, 'errmsg': '参数错误'} 
+2022-08-22 15:13:25,684 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is "errmsg": "参数错误" 
+2022-08-22 15:13:25,685 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG ------------开始执行用例------------ 
+2022-08-22 15:13:25,686 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 执行用例为：{'用例ID': 'login_3', '模块': '登录', '接口名称': '用户名为空，密码正确', '请求URL': '/v1/auth/login', '前置条件': '', '请求类型': 'POST', '请求参数类型': 'json', '请求参数': '{"account_name":"","passwd":"gaojianbo321"}', '预期结果': '{"errmsg": "参数错误"}', '实际结果': '', '备注': '', '是否运行': 'y', 'headers': '', 'cookies': '', 'status_code': '', '数据库验证': ''} 
+2022-08-22 15:13:25,690 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：{"account_name":"","passwd":"gaojianbo321"} 
+2022-08-22 15:13:25,690 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 期望结果为：<class 'str'>{"errmsg": "参数错误"} 
+2022-08-22 15:13:25,690 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG header类型为：<class 'str'> 
+2022-08-22 15:13:25,690 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 发送post请求，请求url：http://sso.xdyj.com/v1/auth/login 
+2022-08-22 15:13:25,690 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：<class 'dict'>{'account_name': '', 'passwd': 'gaojianbo321'} 
+2022-08-22 15:13:25,699 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 用例执行返回结果的body为：{'errno': 50008, 'errmsg': '参数错误'} 
+2022-08-22 15:13:25,699 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is "errmsg": "参数错误" 
+2022-08-22 15:13:25,701 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG ------------开始执行用例------------ 
+2022-08-22 15:13:25,701 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 执行用例为：{'用例ID': 'login_4', '模块': '登录', '接口名称': '用户名和密码都为空', '请求URL': '/v1/auth/login', '前置条件': '', '请求类型': 'POST', '请求参数类型': 'json', '请求参数': '{"account_name":"","passwd":""}', '预期结果': '{"errmsg": "参数错误"}', '实际结果': '', '备注': '', '是否运行': 'y', 'headers': '', 'cookies': '', 'status_code': '', '数据库验证': ''} 
+2022-08-22 15:13:25,706 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：{"account_name":"","passwd":""} 
+2022-08-22 15:13:25,706 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 期望结果为：<class 'str'>{"errmsg": "参数错误"} 
+2022-08-22 15:13:25,706 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG header类型为：<class 'str'> 
+2022-08-22 15:13:25,706 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 发送post请求，请求url：http://sso.xdyj.com/v1/auth/login 
+2022-08-22 15:13:25,706 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：<class 'dict'>{'account_name': '', 'passwd': ''} 
+2022-08-22 15:13:25,715 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 用例执行返回结果的body为：{'errno': 50008, 'errmsg': '参数错误'} 
+2022-08-22 15:13:25,715 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is "errmsg": "参数错误" 
+2022-08-22 15:13:25,717 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG ------------开始执行用例------------ 
+2022-08-22 15:13:25,717 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 执行用例为：{'用例ID': 'login_5', '模块': '登录', '接口名称': '用户名正确，密码错误', '请求URL': '/v1/auth/login', '前置条件': '', '请求类型': 'POST', '请求参数类型': 'json', '请求参数': '{"account_name":"gaojianbo","passwd":"gaojianbo123"}', '预期结果': '{"errmsg": "密码错误"}', '实际结果': '', '备注': '', '是否运行': 'y', 'headers': '', 'cookies': '', 'status_code': '', '数据库验证': ''} 
+2022-08-22 15:13:25,724 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：{"account_name":"gaojianbo","passwd":"gaojianbo123"} 
+2022-08-22 15:13:25,724 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 期望结果为：<class 'str'>{"errmsg": "密码错误"} 
+2022-08-22 15:13:25,724 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG header类型为：<class 'str'> 
+2022-08-22 15:13:25,724 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 发送post请求，请求url：http://sso.xdyj.com/v1/auth/login 
+2022-08-22 15:13:25,724 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：<class 'dict'>{'account_name': 'gaojianbo', 'passwd': 'gaojianbo123'} 
+2022-08-22 15:13:25,733 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 用例执行返回结果的body为：{'errno': 50004, 'errmsg': '账号不存在'} 
+2022-08-22 15:13:25,733 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is "errmsg": "密码错误" 
+2022-08-22 15:13:25,733 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is not in body;e_body="errmsg": "密码错误",body={"errno": 50004, "errmsg": "账号不存在"} 
+2022-08-22 15:13:25,739 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG ------------开始执行用例------------ 
+2022-08-22 15:13:25,739 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 执行用例为：{'用例ID': 'login_6', '模块': '登录', '接口名称': '用户名错误，密码正确', '请求URL': '/v1/auth/login', '前置条件': '', '请求类型': 'POST', '请求参数类型': 'json', '请求参数': '{"account_name":"xxxx","passwd":"gaojianbo321"}', '预期结果': '{"errmsg": "账号不存在"}', '实际结果': '', '备注': '', '是否运行': 'y', 'headers': '', 'cookies': '', 'status_code': '', '数据库验证': ''} 
+2022-08-22 15:13:25,744 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：{"account_name":"xxxx","passwd":"gaojianbo321"} 
+2022-08-22 15:13:25,744 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 期望结果为：<class 'str'>{"errmsg": "账号不存在"} 
+2022-08-22 15:13:25,744 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG header类型为：<class 'str'> 
+2022-08-22 15:13:25,745 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 发送post请求，请求url：http://sso.xdyj.com/v1/auth/login 
+2022-08-22 15:13:25,745 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 传入参数为：<class 'dict'>{'account_name': 'xxxx', 'passwd': 'gaojianbo321'} 
+2022-08-22 15:13:25,754 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG 用例执行返回结果的body为：{'errno': 50004, 'errmsg': '账号不存在'} 
+2022-08-22 15:13:25,754 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py DEBUG e_body is "errmsg": "账号不存在" 
+2022-08-22 15:13:36,346 /Users/huangrong/Documents/work/erp_api/utils/LogUtil.py INFO 报告地址:/Users/huangrong/Documents/work/erp_api/report/html 
